@@ -6,7 +6,7 @@ public class tugas_2 {
         Scanner input13 = new Scanner(System.in);
         System.out.println("SISTEM PERHITUNGAN KUBUS");
         System.out.println("1. Volume Kubus\n2. Luas Permukaan Kubus\n3. Keliling Kubus");
-        System.out.println("Pilih Menu: ");
+        System.out.print("Pilih Menu: ");
         int menu = input13.nextInt();
         System.out.print("Masukkan panjang rusuk kubus: ");
         int rusuk = input13.nextInt();
