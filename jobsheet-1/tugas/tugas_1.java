@@ -21,18 +21,21 @@ public class tugas_1 {
         };
         System.out.print("Input kode plat nomer: ");
         String hurufkode = input13.nextLine().toUpperCase();
-
+        boolean found = false;
         for (int i = 0; i < kode.length; i++) {
             if (hurufkode.equals(kode[i])) {
                 System.out.print("Kode plat nomor tersebut merupakan kota ");
                 for (int j = 0; j < kota[i].length; j++) {
                     System.out.print(kota[i][j]);
                 }
-            } else {
-                System.out.println("Nama daerah tidak ditemukan");
+                found = true;
                 break;
             }
         }
+        if (!found) {
+            System.out.println("Kode Plat Tidak Ditemukan");
+        }
+
         input13.close();
     }
     
