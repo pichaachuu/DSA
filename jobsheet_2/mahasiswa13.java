@@ -6,8 +6,8 @@ public class Mahasiswa13 {
     String kelas;
     double ipk;
 
-    public Mahasiswa13 () {
-    }
+    // public Mahasiswa13 () {
+    // }
 
     public Mahasiswa13 (String nm, String nim, double ipk, String kls) {
         nama = nm;
