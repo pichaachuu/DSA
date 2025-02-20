@@ -29,7 +29,7 @@ public class Mahasiswa13 {
 
     void updateIpk (double ipkBaru) {
         ipk = ipkBaru;
-        if (ipkBaru >= 0.0 || ipkBaru <= 4.0) {
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
             ipk = ipkBaru;
         } else {
             System.out.println("Nilai Tidak Valid. Harus antara 0.0 dan 4.0");

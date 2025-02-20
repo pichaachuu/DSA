@@ -1,4 +1,4 @@
-package jobsheet_2;
+package jobsheet_2.tugas;
 
 public class MataKuliah13 {
     String kodeMK;

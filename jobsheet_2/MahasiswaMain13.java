@@ -14,5 +14,7 @@ public class MahasiswaMain13 {
 
         Mahasiswa13 mhs3 = new Mahasiswa13("Nafisah Aliyah Khumaini", "2441070060066", 3.79, "SIB 1A");
         mhs3.tampilkanInformasi();
+        mhs3.updateIpk(-98.0);
+        mhs3.tampilkanInformasi();
     }
 }
