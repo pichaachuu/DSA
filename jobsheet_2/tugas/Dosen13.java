@@ -26,6 +26,7 @@ public class Dosen13 {
         } else {
             System.out.println("Status: Tidak Aktif");
         }
+        System.out.println("Tahun Bergabung: " + tahunBergabung);
         System.out.println("Periode Bekerja: " + hitungMasaKerja(thnSkrg) + " tahun");
         System.out.println("Bidang Keahlian: " + bidangKeahlian);
     }
