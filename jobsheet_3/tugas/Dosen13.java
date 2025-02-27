@@ -13,12 +13,4 @@ public class Dosen13 {
         this.usia = usia;
     }
 
-    public void cetakInfo(){
-        System.out.println("Kode            : " + kode);
-        System.out.println("Nama            : " + nama);
-        System.out.println("Jenis Kelamin   : " + jenisKelamin);
-        System.out.println("Usia            : " + usia);
-        System.out.println("-".repeat(30));
-    }
-    
 }

@@ -28,10 +28,10 @@ public class DosenDemo13 {
             input13.nextLine();
         }
 
-        System.out.println("DATA DOSEN");
-        for (Dosen13 ds : arrayDosen) {
-            ds.cetakInfo();
-        }
-        
+        DataDosen13.dataSemuaDosen(arrayDosen);
+        DataDosen13.jumlahDosenPerJenisKelamin(arrayDosen);
+        DataDosen13.rerataUsiaDosenPerJenisKelamin(arrayDosen);
+        DataDosen13.infoDosenTertua(arrayDosen);
+        DataDosen13.infoDosenTermuda(arrayDosen);
     }
 }
