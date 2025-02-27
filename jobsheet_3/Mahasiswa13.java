@@ -8,9 +8,9 @@ public class Mahasiswa13 {
 
     void cetakInfo() {
         System.out.println("NIM     : " + nim);
-            System.out.println("Nama    : " + nama);
-            System.out.println("Kelas   : " + kelas);
-            System.out.println("IPK     : " + ipk);
-            System.out.println("-".repeat(30));
+        System.out.println("Nama    : " + nama);
+        System.out.println("Kelas   : " + kelas);
+        System.out.println("IPK     : " + ipk);
+        System.out.println("-".repeat(30));
     }
 }

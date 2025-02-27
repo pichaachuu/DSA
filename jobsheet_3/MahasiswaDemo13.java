@@ -27,5 +27,6 @@ public class MahasiswaDemo13 {
             System.out.println("Data Mahasiswa ke-" + (i+1));
             arrayOfMahasiswa[i].cetakInfo();
         }
+        inpu13.close();
     }
 }
