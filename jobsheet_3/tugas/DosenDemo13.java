@@ -32,6 +32,6 @@ public class DosenDemo13 {
         for (Dosen13 ds : arrayDosen) {
             ds.cetakInfo();
         }
-
+        
     }
 }
