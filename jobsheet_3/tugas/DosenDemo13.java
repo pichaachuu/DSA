@@ -33,5 +33,6 @@ public class DosenDemo13 {
         DataDosen13.rerataUsiaDosenPerJenisKelamin(arrayDosen);
         DataDosen13.infoDosenTertua(arrayDosen);
         DataDosen13.infoDosenTermuda(arrayDosen);
+        input13.close();
     }
 }
