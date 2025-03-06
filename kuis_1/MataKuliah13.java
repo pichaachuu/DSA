@@ -1,5 +1,4 @@
 package kuis_1;
-import java.util.*;
 
 public class MataKuliah13 {
     public String kodeMK;
@@ -39,14 +38,11 @@ public class MataKuliah13 {
         }
     }
 
-    public void tambahDosen (Dosen13[] dosen){
-        Scanner input13 = new Scanner(System.in);
-        System.out.print("Masukkan jumlah dosen yang ingin diinput: ");
-        int jmlDosen = input13.nextInt();
-
-        dosenPengampu = new Dosen13[2 + jmlDosen];
-        for (int i = 2; i < dosen.length; i++) {
-            System.out.println("NI");
+    public void tambahDosen (Dosen13 dosen){
+        for (int i = 0; i < dosenPengampu.length; i++) {
+            if (dosenPengampu[i] == null || (dosenPengampu[i].nidn == null && dosenPengampu[i].nama == null)) {
+                dosenPengampu[i] = dosen;
+            }
         }
         
     }
