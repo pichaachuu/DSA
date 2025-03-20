@@ -1,25 +1,50 @@
 package jobsheet_6;
-
+import java.util.*;
 public class MahasiswaDemo13 {
     public static void main(String[] args) {
+        Scanner input13 = new Scanner(System.in);
         MahasiswaBerprestasi13 list = new MahasiswaBerprestasi13();
-        Mahasiswa13 m1 = new Mahasiswa13("123", "Zidan", "2A", 3.2);
-        Mahasiswa13 m2 = new Mahasiswa13("124", "Ayu", "2A", 3.5);
-        Mahasiswa13 m3 = new Mahasiswa13("125", "Sofi", "2A", 3.1);
-        Mahasiswa13 m4 = new Mahasiswa13("126", "Sita", "2A", 3.9);
-        Mahasiswa13 m5 = new Mahasiswa13("127", "Miki", "2A", 3.7);
+        Mahasiswa13[] m = new Mahasiswa13[5];
+        
+        for (int i = 0; i < m.length; i++) {
+            System.out.println("\nInput data mahasiswa ke-" + (i+1));
+            
+            System.out.print("Nama: ");
+            String nama = input13.nextLine();
+            
+            System.out.print("NIM: ");
+            String nim = input13.nextLine();
+            
+            System.out.print("Kelas: ");
+            String kelas = input13.nextLine();
+            
+            System.out.print("IPK: ");
+            double ipk = input13.nextDouble();
+            input13.nextLine();
+            
+            m[i] = new Mahasiswa13(nim, nama, kelas, ipk);
+            list.tambah(m[i]);
+        }
 
-        list.tambah(m1);
-        list.tambah(m2);
-        list.tambah(m3);
-        list.tambah(m4);
-        list.tambah(m5);
-
-        System.out.println("Data mahasiswa sebelum sorting: ");
+        System.out.println("\nData mahasiswa sebelum sorting: ");
         list.tampil();
 
         System.out.println("Data mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
         list.bubbleSort();
         list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC)");
+        list.selectionSort();
+        list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (ASC)");
+        list.insertionSort();
+        list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (DSC)");
+        list.insertionSortDSC();
+        list.tampil();
+        
+        input13.close();
     }
 }
