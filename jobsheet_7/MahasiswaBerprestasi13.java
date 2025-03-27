@@ -85,7 +85,7 @@ public class MahasiswaBerprestasi13 {
         return posisi;
     }
 
-    void tampilPosisi(double  x, int pos){
+    void tampilPosisi(double x, int pos){
         if (pos!=1) {
             System.out.println("data mahasiswa dengan IPK : " + x + " ditemukan pada indeks " + pos);
         } else {
