@@ -1,7 +1,6 @@
 package jobsheet_11;
 import java.util.*;
 
-import jobsheet_11.Mahasiswa;
 
 public class LayananKRSMain {
     public static void main(String[] args) {

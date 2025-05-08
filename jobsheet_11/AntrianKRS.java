@@ -1,6 +1,5 @@
 package jobsheet_11;
 
-import jobsheet_11.Mahasiswa;
 
 public class AntrianKRS {
     Mahasiswa[] data;
