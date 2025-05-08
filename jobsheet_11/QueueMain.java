@@ -18,6 +18,7 @@ public class QueueMain {
         int n = sc.nextInt();
         Queue q = new Queue(n);
         int pilih;
+        boolean running = true;
 
         do {
             menu();
@@ -26,6 +27,7 @@ public class QueueMain {
                 case 1:
                     if (q.isFull()) {
                         System.out.println("Queue sudah penuh! Operasi Enqueue dibatalkan");
+                        running = false;
                     } else {
                         System.out.print("Masukkan data baru: ");
                         int dataMasuk = sc.nextInt();
@@ -35,6 +37,7 @@ public class QueueMain {
                 case 2:
                     if (q.isEmpty()) {
                         System.out.println("Queue masih kosong! Operasi Dequeue dibatalkan!");
+                        running = false;
                     } else {
                         int dataKeluar = q.Dequeue();
                         if (dataKeluar != 0) {
@@ -53,7 +56,7 @@ public class QueueMain {
                     q.clear();
                     break; 
                 }      
-        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
+        } while (running && pilih != 0);
         sc.close();
     }
 }    
