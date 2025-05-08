@@ -1,4 +1,4 @@
-package jobsheet_11;
+package jobsheet_11.P1Jobsheet11;
 import java.util.*;
 
 public class QueueMain {

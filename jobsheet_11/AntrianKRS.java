@@ -1,5 +1,7 @@
 package jobsheet_11;
 
+import jobsheet_11.P2Jobsheet11.Mahasiswa;
+
 public class AntrianKRS {
     Mahasiswa[] data;
     int front;

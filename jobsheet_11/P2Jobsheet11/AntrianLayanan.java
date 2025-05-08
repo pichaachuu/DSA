@@ -1,4 +1,4 @@
-package jobsheet_11;
+package jobsheet_11.P2Jobsheet11;
 
 public class AntrianLayanan {
     Mahasiswa[] data;

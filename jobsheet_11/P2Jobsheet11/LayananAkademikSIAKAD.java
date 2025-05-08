@@ -1,4 +1,4 @@
-package jobsheet_11;
+package jobsheet_11.P2Jobsheet11;
 import java.util.*;
 
 public class LayananAkademikSIAKAD {

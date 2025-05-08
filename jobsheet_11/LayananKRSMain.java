@@ -1,6 +1,8 @@
 package jobsheet_11;
 import java.util.*;
 
+import jobsheet_11.P2Jobsheet11.Mahasiswa;
+
 public class LayananKRSMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

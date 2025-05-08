@@ -1,4 +1,4 @@
-package jobsheet_11;
+package jobsheet_11.P1Jobsheet11;
 
 public class Queue {
     int[] data;
