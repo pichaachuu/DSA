@@ -167,4 +167,60 @@ public class BinaryTree13 {
             }
         }
     }
+
+    public void addRekursif(Mahasiswa13 data){
+        root = addRekursif(root, data);
+    }
+
+    public Node13 addRekursif(Node13 current, Mahasiswa13 data){
+        if (current == null) {
+            return new Node13(data);
+        }
+        if (data.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, data);
+        } else {
+            current.right = addRekursif(current.right, data);
+        }
+        return current;
+    }
+
+    public void cariMinIPK(){
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node13 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        System.out.println("Mahasiswa dengan IPK terkecil:");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void cariMaxIPK(){
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node13 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        System.out.println("Mahasiswa dengan IPK terbesar:");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void tampilMahasiswaIPKdiAtas(double ipkBatas){
+        tampilMahasiswaIPKdiAtas(root, ipkBatas);
+    }
+
+    public void tampilMahasiswaIPKdiAtas(Node13 node, double ipkBatas){
+        if (node != null) {
+            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+            if (node.mahasiswa.ipk > ipkBatas) {
+                node.mahasiswa.tampilInformasi();
+            }
+            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+        }
+    }
 }
